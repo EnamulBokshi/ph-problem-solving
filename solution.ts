@@ -71,3 +71,29 @@ const checkPalindrome = (str: string) => {
 
 }
 checkPalindrome("aba!!")
+
+/**
+ * Problem:5 Array Summation
+ */
+function arraySum(arr:number[]) {
+    const sum = arr.reduce((acc, current)=> acc+current , 0);
+    console.log(sum)
+}
+// arraySum([1,2,3,4,5,6,7,8,9,10]);//55
+
+/**
+ * Problem - 6: Vowels count 
+ */
+
+const countVowels = (str:string) => {
+    let totalVowels = 0;
+    const vowels = ['A','E','I','O','U','a','e','i','o','u']
+    for(const s of str){
+        if(vowels.includes(s)){
+            totalVowels = totalVowels+1;
+        }
+    }
+    console.log(totalVowels);
+} 
+
+// countVowels("AEIOUa")
