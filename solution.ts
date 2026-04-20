@@ -97,3 +97,15 @@ const countVowels = (str:string) => {
 } 
 
 // countVowels("AEIOUa")
+
+/**
+ * Problem - 7: Find factorials on n
+ */
+
+function factorial(n:number):number{
+    if(n<=1) return 1;
+    return n * factorial(n-1);
+}
+
+const fact = factorial(5);
+console.log(fact);
